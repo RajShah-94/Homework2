@@ -12,11 +12,7 @@ using namespace std;
 
 int main() {
 	float x = -10;
-	float a;
-	float b;
-	float c;
-	float d;
-	float y;
+	float a, b, c, d, y;
 
 	cin >> a;
 	cin >> b;
@@ -27,11 +23,9 @@ int main() {
 					ios::floatfield);
 			cout.precision(3);
 
-	for(int i=0; i<40; i++) {
+	for(int i=0; i<=40; i++) {
 		y = (a*pow(x,3)) + (b*pow(x,2)) + (c*x) +d;
-
 		cout << y << endl;
 		x=x+0.5;
-
 	}
 }
