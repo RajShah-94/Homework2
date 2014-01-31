@@ -11,12 +11,26 @@
 using namespace std;
 
 int main() {
-	float x = 2;
+	float x;
 	float a;
-	float b = 4;
-	float c = 5;
-	float d = 6.5;
+	float b;
+	float c;
+	float d;
+	double i;
+
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cin >> d;
+
 	float y = (a*pow(x,3)) + (b*pow(x,2)) + (c*x) +d;
 
-	cout << y << endl;
+	for(x=-10; x<=10; i++) {
+		cout.setf(ios::scientific,
+				ios::floatfield);
+		cout.precision(3);
+		cout << y << endl;
+		float x=x+0.5i;
+	}
+
 }
